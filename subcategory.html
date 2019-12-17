@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>subcategory1</title>
+        <link href="css/relaxation.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="imgs/Asset%202.png">
+        <script src="js/relaxation.js"></script>
+        <script src="js/proxy.js" defer></script>
+    </head>
+    
+    <body onload="onLoad()">
+        
+        <div id="app">
+        <!---burger menu-->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <br>
+                <br>
+                <a onclick="ChangeCategory('relax')">Relaxation</a>
+                <a onclick = "ChangeCategory('sleep')">Sleep</a>
+                <a onclick="ChangeCategory('zen')">Zen</a>
+                <a onclick="ChangeCategory('study')">Study</a>
+                <a onclick="ChangeCategory('concentration')">Concentration</a>
+                <a onclick="ChangeCategory('background')">Background</a>
+            </div>
+
+            <button class="openbtn" onclick="openNav()">☰</button>  
+           
+          <!---burger menu-->
+            
+            <h1 id="head"></h1>
+            <div>
+            <img src="svgs/back.png" id="back" onclick="myBack()">
+            </div>
+            
+            <div class="grid-container">
+                <div class="cateicons relax" onclick="ChangeAudio('forest.wav')" >
+                    <img id= "natureicon" class="cateicons-img" src="svgs/trees.svg">
+                    <div class="cateicons-text">Forest</div>
+                </div>
+                <div class="cateicons relax" onclick="ChangeAudio('leaves.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/leaves.svg">
+                   <div class="cateicons-text">Leaves</div>
+                </div>
+                <div class="cateicons relax sleep zen" onclick="ChangeAudio('stream.wav')" >
+                    <img id="outdooricon" class="cateicons-img" src="svgs/stream.svg">
+                   <div class="cateicons-text">Stream</div>
+                </div>
+                <div class="cateicons relax sleep" onclick="ChangeAudio('campfire.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/campfire.svg">
+                   <div class="cateicons-text">Campfire</div>
+                </div>
+                <div class="cateicons relax" onclick="ChangeAudio('summernight.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/summernight.svg">
+                   <div class="cateicons-text">Summer Night</div>
+                </div>
+                 <div class="cateicons sleep" onclick="ChangeAudio('ocean.wav')">
+                    <img id="oceanicon" class="cateicons-img" src="svgs/water.svg">
+                   <div class="cateicons-text">Ocean</div>
+                </div>
+                 <div class="cateicons sleep zen" onclick="ChangeAudio('rain.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/rain.svg">
+                   <div class="cateicons-text">Rain</div>
+                </div>
+                
+                 <div class="cateicons sleep" onclick="ChangeAudio('train.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/train.svg">
+                   <div class="cateicons-text">Train</div>
+                </div>
+                
+                 <div class="cateicons zen" onclick="ChangeAudio('waterfall.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/waterfall.svg">
+                   <div class="cateicons-text">Waterfall</div>
+                </div>
+                 <div class="cateicons zen" onclick="ChangeAudio('tibetanbowl.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/bowl.svg">
+                   <div class="cateicons-text">Tibetan Bowl</div>
+                </div>
+                 <div class="cateicons zen study concentration" onclick="ChangeAudio('crystal.mp3')" >
+                    <img id="outdooricon" class="cateicons-img" src="svgs/crystal.svg">
+                   <div class="cateicons-text">Crystal</div>
+                </div>
+                 <div class="cateicons study concentration" onclick="ChangeAudio('galaxy.mp3')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/galaxy.svg">
+                   <div class="cateicons-text">Galaxy</div>
+                </div>
+                 <div class="cateicons study background" onclick="ChangeAudio('piano.mp3')">
+                    <img id="pianoicon" class="cateicons-img" src="svgs/piano.svg">
+                   <div class="cateicons-text">Piano</div>
+                </div>
+                 <div class="cateicons study background" onclick="ChangeAudio('jazz.mp3')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/jazz.svg">
+                   <div class="cateicons-text">Jazz</div>
+                </div>
+                 <div class="cateicons study" onclick="ChangeAudio('guitar.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/guitar.svg">
+                   <div class="cateicons-text">Guitar</div>
+                </div>
+                 <div class="cateicons concentration" onclick="ChangeAudio('waterdrop.wav')">
+                    <img id="outdooricon" class="cateicons-img" src="svgs/waterdrop.svg">
+                   <div class="cateicons-text">Waterdrop</div>
+                </div>
+                 <div class="cateicons concentration" onclick="ChangeAudio('airplane.wav')">
+                    <img id="airplaneicon" class="cateicons-img" src="svgs/airplane.svg">
+                   <div class="cateicons-text">Airplane</div>
+                </div>
+                 <div class="cateicons concentration" onclick="ChangeAudio('washingmachine.mp3')" >
+                    <img id="washingmachineicon" class="cateicons-img" src="svgs/washingmachine.svg">
+                   <div class="cateicons-text">Washing Machine</div>
+                </div>
+                 <div class="cateicons background" onclick="ChangeAudio('winterstorm.wav')">
+                    <img id="outdoor" class="cateicons-img" src="svgs/snowstorm.svg">
+                   <div class="cateicons-text">Winter Storm</div>
+                </div>
+                 <div class="cateicons background" onclick="ChangeAudio('thunder.wav')">
+                    <img id="outdoors" class="cateicons-img" src="svgs/thunderstorm.svg">
+                   <div class="cateicons-text">Thunder Storm</div>
+                </div>
+                 <div class="cateicons background" onclick="ChangeAudio('tropicalbeach.mp3')">
+                    <img id="outdoor" class="cateicons-img" src="svgs/tropicalbeach.svg">
+                   <div class="cateicons-text">Tropical Beach</div>
+                </div>
+                
+            </div>
+        </div>
+
+       
+    </body>
+</html>

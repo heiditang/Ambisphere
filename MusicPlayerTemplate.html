@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ambisphere</title>
+    <link href="css/musicplayer.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icons1/Logo.png">
+    <script type="text/javascript" src="js/musicplayer.js" defer></script>
+    <script type="text/javascript" src="js/proxy.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+    <script type="text/javascript">
+        function myBack() {
+            window.history.back();
+        }
+    </script>
+
+</head>
+
+<body onload='trackLoad()'>
+    <div id="app">
+        <div class="header">
+            <img onclick="myBack()" src="svgs/back.png" id="backbut">
+            <span id="title"></span>
+
+        </div>
+
+        <div id="slideshow" class="container">
+            <img src="SVG/default.jpg" class="playerpic">
+            <!-- <img src="SVG/guitar.svg" class="playerpic">
+            <img src="SVG/guitar2.svg" class="playerpic" id="pic1">
+            <img src="SVG/guitar3.svg" class="playerpic" id="pic2">
+            <img src="SVG/guitar3.svg" class="playerpic" id="pic2"> -->
+        </div>
+
+        <div id="playbar">
+            <div id="timeline">
+                <div id="playhead">
+                </div>
+            </div>
+        </div>
+
+        <div id="controls">
+            <img src="svgs/playlist.svg" id="list" alt="playlist">
+
+            <audio id="mytrack" controls loop>
+                <!-- <source id="music" src="audio/guitar.wav" type="audio/mp3" /> -->
+            </audio>
+
+            <button id="play" onclick="playOrPause()"></button>
+
+
+            <button id="repeat" onclick="repeatMusic()"></button>
+        </div>
+
+
+
+    </div>
+</body>
+
+
+</html>

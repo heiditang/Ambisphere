@@ -1,0 +1,138 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-image: url(../imgs/sleep.jpeg) ;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 900px;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 32px 32px 32px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0px;;
+  right: 270px;
+  font-size: 85px;
+}
+
+.openbtn {
+  font-size: 80px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+ float: right;
+margin-top: 70px;  
+}
+
+#head{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 70pt;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    left: 400px;
+    color: white;
+    margin-top: 11%;
+    grid-row: 1;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-gap: 40px;
+  padding: 50px;
+    margin-top: 5%;
+}
+.grid-container > div {
+  background-image: linear-gradient(to bottom,rgb(67,136,159),rgb(99,204,166));
+  border-radius: 18px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 70px;
+  color: white;
+    width: 100vw;
+    margin-left: -60px;
+/*    height: 225px;*/
+
+}
+.icons {
+    width: 200px;
+    margin-left: 70px;
+}
+
+.cateicons{
+    width: 100%;
+    height: 200px;
+/*    margin-left:10%;*/
+/*    margin-right: 30%;*/
+    margin-top: 10px;
+    justify-content: center;
+    display:flex;
+}
+#wave {
+    width: 20%;
+}
+
+.cateicons-img {
+    height: 80%;
+  
+/*    margin: 30px 300px 20px 0;*/
+    flex: 1;
+    margin-left: 130px;
+    justify-content: center;    
+    margin-top: 20px;
+/*    margin-left: 100px;*/
+
+/*    float: left;*/
+    
+}
+.cateicons-text{
+    margin-top: 6%;
+    flex: 5;
+    text-align: right;
+    margin-right: 120px;
+}
+
+#back{
+    width: 15%;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+#bottom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    margin-top: 47%;
+    background-image: url(../svgs/footer.svg);
+    background-size: cover;
+}
+#home,#search,#play {
+    width: 150px;
+}

@@ -1,0 +1,62 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+  background-image: url(../imgs/img1.jpeg) ;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+#head{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 60pt;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    left: 190px;
+    color: white;
+    margin-top: 11%;
+    grid-row: 1;
+}
+
+.icons{
+    width: 200px;
+    padding-top: 20px;
+    opacity: 1;
+    
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 15px;
+/*  background-color: #2196F3;*/
+  padding: 10px;
+ padding-top: 350px;   
+}
+
+.grid-container > div {
+  background-image: linear-gradient(to top,rgb(67,136,159),rgb(99,204,166));
+    opacity: 1;
+  border-radius: 18px;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 45pt;
+  color: white;
+  height: 350px;  
+}
+/*
+#bottom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    margin-top: 23%;
+    background-image: url(../svgs/footer.svg);
+    background-size: cover;
+}
+#home,#search,#play {
+    width: 150px;
+    margin-left: 90px;
+}
+*/

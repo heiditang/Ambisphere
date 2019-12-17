@@ -1,0 +1,161 @@
+
+body {
+  font-family: 'PT Sans', sans-serif;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 1800px;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 50px 34px 50px 34px;
+  text-decoration: none;
+  font-size: 60px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0px;;
+  right: 30px;
+  font-size: 90px;
+}
+
+.openbtn {
+  font-size: 85pt;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+ float: right;
+margin-top: 7.5%;  
+}
+
+#head{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 65pt;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    left: 25%;
+    color: white;
+    margin-top: 11%;
+    grid-row: 1;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-gap: 30px;
+  padding: 50px;
+    margin-top: 5%;
+}
+.grid-container > div {
+  background-image: linear-gradient(to bottom,rgb(99,204,166),rgb(67,136,159));
+  border-radius: 18px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 70px;
+  color: white;
+    width: 100vw;
+    margin-left: -60px;
+/*    height: 225px;*/
+
+}
+.icons {
+    width: 200px;
+    margin-left: 70px;
+}
+
+.cateicons{
+    width: 100%;
+    height: 220px;
+/*    margin-left:10%;*/
+/*    margin-right: 30%;*/
+    margin-top: 10px;
+    justify-content: center;
+    display:none;
+    align-items: center;
+    
+}
+
+.cateicons-img {
+    height: 80%;
+    margin: 20px 300px 20px 0;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 80px;
+
+/*
+    margin-top: 20px;
+    margin-left: 100px;
+*/
+/*    float: left;*/
+    
+}
+.cateicons-text{
+    margin-top: 2%;
+    text-align: center;
+    margin-left: -120px; 
+}
+
+
+#back{
+    width: 15%;
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 4%;
+}
+
+/*
+#bottom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    margin-top: 72%;
+    background-image: url(../svgs/footer.svg);
+    background-size: cover;
+}
+*/
+/*
+#home,#search,#play {
+    width: 150px;
+}
+*/
+
+#oceanicon{
+  width:20%;
+}
+
+#outdoor, #outdoors, #outdoors1{
+  margin-left: 20%;
+}
+
+#pianoicon, #airplaneicon{
+  width: 20%;
+
+}
+
+#washingmachineicon{
+  margin-left: 20%;
+}
